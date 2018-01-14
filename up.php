@@ -32,7 +32,7 @@ th {
 	padding: 10px;
 }
 a {
-	color: #ffffff;
+	color: #fffff;
 	text-decoration: none;
 }
 a:hover {
